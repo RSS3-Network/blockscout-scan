@@ -10,12 +10,15 @@ function getTokenIconUrl (chainID, addressHash) {
     case '100':
       chainName = 'xdai'
       break
+    case '2331':
+      chainName = 'rss3'
+      break
     default:
       chainName = null
       break
   }
   if (chainName) {
-    return `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/${chainName}/assets/${addressHash}/logo.png`
+    return `https://raw.githubusercontent.com/RSS3-Network/blockscout-assets/master/blockchains/${chainName}/assets/${addressHash}/logo.png`
   } else {
     return '/images/icons/token_icon_default.svg'
   }
