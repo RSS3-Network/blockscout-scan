@@ -14,7 +14,7 @@ function getTokenIconUrl (chainID, addressHash) {
       chainName = 'rss3'
       break
     default:
-      chainName = null
+      chainName = 'rss3'
       break
   }
   if (chainName) {
